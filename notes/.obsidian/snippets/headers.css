@@ -1,0 +1,16 @@
+.code-nowrap .HyperMD-codeblock,
+.code-nowrap pre > code {
+  white-space: pre;
+}
+
+.no-inline .inline-title {
+  display: none;
+}
+
+/* Change comment color inside code blocks */
+.markdown-preview-view code[class*="language-"] .token.comment,
+.markdown-preview-view code[class*="language-"] .token.prolog,
+.markdown-preview-view code[class*="language-"] .token.doctype,
+.markdown-preview-view code[class*="language-"] .token.cdata {
+  color: #aaaaaa !important; /* lighter gray or your preferred color */
+}

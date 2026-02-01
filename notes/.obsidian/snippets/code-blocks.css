@@ -1,0 +1,38 @@
+.code-nowrap .HyperMD-codeblock,
+.code-nowrap pre > code {
+  white-space: pre;
+}
+
+.no-inline .inline-title {
+  display: none;
+}
+
+/* Change comment color inside code blocks */
+.markdown-preview-view code[class*="language-"] .token.comment,
+.markdown-preview-view code[class*="language-"] .token.prolog,
+.markdown-preview-view code[class*="language-"] .token.doctype,
+.markdown-preview-view code[class*="language-"] .token.cdata {
+  color: #aaaaaa !important; /* lighter gray or your preferred color */
+}
+
+
+body {
+  --code-comment: #98895e !important;
+  --code-decorator: #a1a109 !important;
+}
+
+/* Preview mode (markdown-preview-view) */
+.markdown-preview-view code[class*="language-"] .token.decorator,
+.markdown-preview-view code[class*="language-"] .token.annotation,
+.markdown-preview-view code[class*="language-"] .token.meta,
+.markdown-preview-view code[class*="language-"] .token.operator {
+  color: var(--code-decorator) !important;
+}
+
+/* Edit mode (CodeMirror) */
+.cm-s-obsidian span.cm-operator,
+.cm-hmd-codeblock.cm-operator {
+  color: var(--code-decorator) !important;
+}
+
+
