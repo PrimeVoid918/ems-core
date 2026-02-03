@@ -14,7 +14,7 @@ class HomeController
 
     // Prepare data ONLY
     $title = 'Home';
-    $message = $service->greet();
+    $message = $service->findAll("example");
 
     $firstname = "John";
     $lastname = "Doe";
