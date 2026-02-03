@@ -7,8 +7,9 @@ class SampleRoutes
   public static function routes(): array
   {
     return [
-      'GET /' => [SampleController::class, 'index'],
-      'POST /' => [SampleController::class, 'store'],
+      'GET /' => [SampleController::class, 'findAll'],
+      'GET /testCall' => [SampleController::class, 'testCall'],
+      'POST /' => [SampleController::class, 'create'],
     ];
   }
 }

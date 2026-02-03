@@ -3,16 +3,27 @@
 // namespace App\Domains\Sample;
 namespace App\Domains\Sample;
 
+use App\Infra\Persistence\UsersRepository;
+
 class SampleService
 {
-  public function greet(): string
+  public function findAll($firstname): array
   {
-    return 'Hello world test';
+    $objectData = [
+      "username" => $firstname,
+      "message:" => "this is a findAll function",
+      "isError" => true,
+    ];
+
+    return $objectData;
   }
 
-  public function findAll($firstname): string
+  public function testCall(): array
   {
-    return $firstname;
+    $users = new UsersRepository();
+    return [
+      "data" => $users->findAll(),
+    ];
   }
 
   public function compute($firstname, $lastname): string
