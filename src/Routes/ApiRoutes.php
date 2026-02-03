@@ -1,7 +1,8 @@
 <?php
 
-use App\Domains\Sample\SampleController;
+use App\Domains\Sample\SampleRoutes;
 
 return [
-  'GET /api/sample' => [SampleController::class, 'index'],
+  '/sample' => SampleRoutes::class,
+  // '/api/users' => UsersRoutes::class,
 ];

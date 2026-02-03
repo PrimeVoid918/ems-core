@@ -9,4 +9,14 @@ class SampleService
   {
     return 'Hello world test';
   }
+
+  public function findAll($firstname): string
+  {
+    return $firstname;
+  }
+
+  public function compute($firstname, $lastname): string
+  {
+    return $firstname . $lastname;
+  }
 }

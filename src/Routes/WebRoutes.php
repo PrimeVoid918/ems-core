@@ -1,7 +1,7 @@
 <?php
 
-use App\Pages\Home\HomePage;
+use App\Pages\Home\HomeController;
 
 return [
-    '/' => HomePage::class,
+    '/' => HomeController::class,
 ];
